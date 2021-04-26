@@ -7,7 +7,7 @@ public class MainMenuStateModel : StateModel
     {
         yield return base.OnStateBeginning();
 
-        UI.Panels.ShowPanel<MainMenuPanelVM>(TransitionCode.Alpha);
+        yield return UI.Panels.ShowPanel<MainMenuPanelVM>(TransitionCode.Alpha);
 
         // yield return Root.States.GoToStateCoroutine(StateCode.Introduction);
     }

@@ -35,7 +35,7 @@ public abstract class FilesDataModel : Model
 {
     [SerializeField]
     private string _filesDirectoryPath;
-    public string FilesDirectoryPath => _filesDirectoryPath;
+    public string FilesDirectoryPath => Application.dataPath + @"\Data";
 
     public abstract void FetchData();
     public abstract void ClearData();
